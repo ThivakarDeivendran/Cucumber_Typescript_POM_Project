@@ -1,0 +1,13 @@
+{
+"default":{
+        "formatOptions":{"snippetInterface":"async-await"},
+        "paths":["tests/features/"],
+        "require":["tests/stepDefinitions/*.ts","hooks/hook.ts"],
+        "requireModule":["ts-node/register"],
+        "dryRun":false,
+        "tags":"@Test",
+        "format":[
+            "progress-bar"
+        ]
+    }
+}
