@@ -2,7 +2,7 @@ Feature: Feature file contain Adactin Application login Functionality
 
 Background: 
   Given User navigate into Web Application
-  
+
 Scenario: Verify  login Functionality for invalid inputs
  When User enter the username "Test"
  And User enter the password "Test"

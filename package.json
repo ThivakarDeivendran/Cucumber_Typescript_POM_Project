@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "cucumber-js test",
+    "posttest": "npx ts-node util/testReportHelper.ts"
   },
   "keywords": [],
   "license": "ISC",
@@ -12,6 +13,7 @@
     "@cucumber/cucumber": "^11.1.1",
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.5",
+    "multiple-cucumber-html-reporter": "^3.8.0",
     "ts-node": "^10.9.2"
   }
 }

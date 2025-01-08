@@ -1,0 +1,28 @@
+const report = require ("multiple-cucumber-html-reporter");
+
+report.generate({
+    jsonDir: "testReportResults",
+    reportPath: "./testReportResults/report",
+    reportName: "Playwright_Automation_Report",
+    pageTitle: "demo_Automation_App_test_report",
+    displayDuration: false,
+    metadata: {
+        browser: {
+            name: "Chrome",
+            version: "131",
+        },
+        device: "Thivakar Deivendran - PC",
+        platform: {
+            name: "Windows",
+            version: "11",
+        },
+    },
+    customData: {
+        title: "Test-Execution Information",
+        data: [
+            { label: "Project", value: "demo Automation Application" },
+            { label: "Release", value: "1.2.3" },
+            { label: "Cycle", value: "Functional Testing" }
+        ],
+    },
+});
